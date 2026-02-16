@@ -70,8 +70,10 @@ const Editor = () => {
                 const displayWidth = container.clientWidth;
                 const displayHeight = container.clientHeight;
 
-                drawingCanvasRef.current.width = displayWidth;
-                drawingCanvasRef.current.height = displayHeight;
+                if (drawingCanvasRef.current) {
+                    drawingCanvasRef.current.width = displayWidth;
+                    drawingCanvasRef.current.height = displayHeight;
+                }
             };
         }
     }, [image]);

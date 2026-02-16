@@ -71,5 +71,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .gradient-text {
   background: linear-gradient(135deg, #9d00ff 0%, #00d4ff 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
